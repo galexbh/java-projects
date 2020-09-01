@@ -6,6 +6,7 @@ public class Product {
 	private String nameProduct;
 	private double price;
 	private int units;
+	private boolean productStatus;
 	
 	//establecer valores en 0 y null
 	public Product() {
@@ -13,13 +14,15 @@ public class Product {
 		this.nameProduct = null;
 		this.price = 0.0;
 		this.units = 0;
+		this.productStatus = true;
 	}
 
-	public Product(int id, String nameProduct, double price, int units) {
+	public Product(int id, String nameProduct, double price, int units, boolean productStatus) {
 		this.id = id;
 		this.nameProduct = nameProduct;
 		this.price = price;
 		this.units = units;
+		this.productStatus = productStatus;
 	}
 	//Obtener id del producto
 	public int getId() {
@@ -54,10 +57,27 @@ public class Product {
 		this.units = units;
 	}
 
-	@Override
-	// Obtener id, nombre, precio y unidades
-	public String toString() {
-		return "Product [id= " + id + ", nameProduct= " + nameProduct + ", price= " + price + "$" +", units= " + units + "]";
+	public boolean isProductStatus() {
+		return productStatus;
 	}
+
+	public void setProductStatus(boolean productStatus) {
+		this.productStatus = productStatus;
+	}
+	
+	public String getInvetory(){
+		String validate = (productStatus == true)? "Activo":"Descatalogado";
+		return "Product [id=" + id + ", nameProduct=" + nameProduct + ", price=" + price +"$" + ", units=" + units
+				+" Stock Value=" + (price*units) + ", productStatus=" + validate + "]";
+	}
+
+	@Override
+	public String toString() {
+		String validate = (productStatus == true)? "Activo":"Descatalogado";
+		return "Product [id=" + id + ", nameProduct=" + nameProduct + ", price=" + price +"$" + ", units=" + units
+				+ ", productStatus=" + validate + "]";
+	}
+
+	
 	
 }
