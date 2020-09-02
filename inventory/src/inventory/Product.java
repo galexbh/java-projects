@@ -22,46 +22,46 @@ public class Product {
 		this.nameProduct = nameProduct;
 		this.price = price;
 		this.units = units;
-		this.productStatus = productStatus;
+		this.productStatus = productStatus = true;
 	}
 	//Obtener id del producto
-	public int getId() {
+	protected int getId() {
 		return this.id;
 	}
 	//establecer id del producto
-	public void setId(int id) {
+	protected void setId(int id) {
 		this.id = id;
 	}
 	//obtener nombre del producto
-	public String getNameProduct() {
+	protected String getNameProduct() {
 		return this.nameProduct;
 	}
 	//establecer nombre del producto
-	public void setNameProduct(String nameProduct) {
+	protected void setNameProduct(String nameProduct) {
 		this.nameProduct = nameProduct;
 	}
 	//obtener precio del producto
-	public double getPrice() {
+	protected double getPrice() {
 		return this.price;
 	}
 	//establecer nombre del producto
-	public void setPrice(double price) {
+	protected void setPrice(double price) {
 		this.price = price;
 	}
 	//obtener unidades
-	public int getUnits() {
+	protected int getUnits() {
 		return this.units;
 	}
 	//establecer unidades
-	public void setUnits(int units) {
+	protected void setUnits(int units) {
 		this.units = units;
 	}
 
-	public boolean isProductStatus() {
+	protected boolean isProductStatus() {
 		return productStatus;
 	}
 
-	public void setProductStatus(boolean productStatus) {
+	protected void setProductStatus(boolean productStatus) {
 		this.productStatus = productStatus;
 	}
 	
