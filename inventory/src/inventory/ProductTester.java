@@ -53,7 +53,8 @@ public class ProductTester {
 
 		for(int i = 0; i < maxSize; i++){
 			
-			list[i] = new Product(tempNumber,tempName,tempPrice,tempQty,centinela);
+			list[i] = new Product(tempNumber,tempName,tempPrice,tempQty);
+			//list[i] = new Product(tempNumber,tempName,tempPrice,tempQty,centinela);
 			
 			System.out.println("Ingrese el ID");
 			list[i].setId(in.nextInt());
@@ -71,7 +72,7 @@ public class ProductTester {
 			if(tempQty == 0){
 				 System.out.println("No se requieren productos.");
 			}
-						
+			/*
 			do {				
 				System.out.println("Ingrese si esta activo");
 				System.out.println("1. Si | 2. No");
@@ -96,8 +97,9 @@ public class ProductTester {
 				
 				}
 			}while(centinela);
-			
+			*/
 		}
+		
 		
 		for (Product product : list) {
 

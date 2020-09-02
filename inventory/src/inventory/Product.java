@@ -17,13 +17,22 @@ public class Product {
 		this.productStatus = true;
 	}
 
+	public Product(int id, String nameProduct, double price, int units) {
+		this.id = id;
+		this.nameProduct = nameProduct;
+		this.price = price;
+		this.units = units;
+		this.productStatus = true;
+	}
+	
 	public Product(int id, String nameProduct, double price, int units, boolean productStatus) {
 		this.id = id;
 		this.nameProduct = nameProduct;
 		this.price = price;
 		this.units = units;
-		this.productStatus = productStatus = true;
+		this.productStatus = productStatus;
 	}
+	
 	//Obtener id del producto
 	protected int getId() {
 		return this.id;
