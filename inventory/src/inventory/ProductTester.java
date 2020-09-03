@@ -2,7 +2,7 @@
  * # ! Inventory
  * # * Fundamental concepts of Java
  * @author galexbh@protonmail.com
- * @version 0.3
+ * @version 0.3.5
  * */
 
 package inventory;
