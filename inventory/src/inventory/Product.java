@@ -16,6 +16,14 @@ public class Product {
 		this.units = 0;
 		this.productStatus = true;
 	}
+	
+	public Product(int id, String nameProduct, double price, int units) {
+		this.id = id;
+		this.nameProduct = nameProduct;
+		this.price = price;
+		this.units = units;
+		this.productStatus = true;
+	}
 
 	public Product(int id, String nameProduct, double price, int units, boolean productStatus) {
 		this.id = id;
@@ -24,6 +32,7 @@ public class Product {
 		this.units = units;
 		this.productStatus = productStatus;
 	}
+	
 	//Obtener id del producto
 	public int getId() {
 		return this.id;
