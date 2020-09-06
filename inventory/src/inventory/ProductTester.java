@@ -2,7 +2,7 @@
  * # ! Inventory
  * # * Fundamental concepts of Java
  * @author galexbh@protonmail.com
- * @version 0.3.5
+ * @version 0.3
  * */
 
 package inventory;
@@ -21,9 +21,9 @@ public class ProductTester {
 		String tempName = "";
 		int tempQty = 0;
 		double tempPrice = 0.0;
-		int tempStatus = 1;
 		int maxSize = -1;
-		boolean centinela = true; 
+		//int tempStatus = 1;
+		//boolean centinela = true; 
 		
 		do {
 			
