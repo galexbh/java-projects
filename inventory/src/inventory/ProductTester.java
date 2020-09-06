@@ -1,11 +1,15 @@
-package inventory;
+/*
+ * # ! Inventory
+ * # * Fundamental concepts of Java
+ * @author galexbh@protonmail.com
+ * @version 0.1
+ * */
 
-//import java.util.Scanner;
+package inventory;
 
 public class ProductTester {
 
 	public static void main(String[] args) {
-//		Scanner scEntrada = new Scanner(System.in);
 		
 		Product telefono = new Product();
 		Product teclado = new Product();
